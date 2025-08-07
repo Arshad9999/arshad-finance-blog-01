@@ -64,6 +64,12 @@ export default {
 					warning: 'hsl(var(--finance-warning))',
 					danger: 'hsl(var(--finance-danger))',
 				},
+				tech: {
+					primary: 'hsl(var(--tech-primary))',
+					secondary: 'hsl(var(--tech-secondary))',
+					accent: 'hsl(var(--tech-accent))',
+					warning: 'hsl(var(--tech-warning))',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

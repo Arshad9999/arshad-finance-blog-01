@@ -45,10 +45,13 @@ All colors MUST be HSL.
     --finance-danger: 0 84% 60%;
     
     /* Tech theme colors */
-    --tech-primary: 25 118 210;
-    --tech-secondary: 16 185 129;
-    --tech-accent: 245 158 11;
-    --tech-warning: 239 68 68;
+    --tech-primary: 214 84% 56%;
+    --tech-secondary: 160 84% 39%;
+    --tech-accent: 45 93% 58%;
+    --tech-warning: 0 84% 60%;
+    --tech-background: 220 15% 7%;
+    --tech-surface: 220 13% 13%;
+    --tech-muted: 220 10% 25%;
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(214 84% 56%), hsl(160 84% 39%));

@@ -69,6 +69,9 @@ export default {
 					secondary: 'hsl(var(--tech-secondary))',
 					accent: 'hsl(var(--tech-accent))',
 					warning: 'hsl(var(--tech-warning))',
+					background: 'hsl(var(--tech-background))',
+					surface: 'hsl(var(--tech-surface))',
+					muted: 'hsl(var(--tech-muted))',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

@@ -539,17 +539,31 @@ const Blogs = () => {
             Need personalized advice? Reach out for expert guidance on your tech decisions
           </p>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
-              { label: "Email", value: "arshadid135@gmail.com", icon: "📧" },
-              { label: "WhatsApp", value: "+91 9044083370", icon: "📱" },
-              { label: "Location", value: "Lucknow, Uttar Pradesh, India", icon: "📍" }
+              { label: "Email", value: "arshadid135@gmail.com", icon: "📧", href: "mailto:arshadid135@gmail.com" },
+              { label: "WhatsApp", value: "+91 9044083370", icon: "📱", href: "https://wa.me/919044083370" },
+              { label: "LinkedIn", value: "Mohd Arshad Siddiqui", icon: "💼", href: "https://www.linkedin.com/in/mohd-arshad-siddiqui-284048225/" },
+              { label: "GitHub", value: "Arshad9999", icon: "🔗", href: "https://github.com/Arshad9999" },
+              { label: "Instagram", value: "@arshad_official_1303", icon: "📸", href: "https://www.instagram.com/arshad_official_1303/" },
+              { label: "Location", value: "Lucknow, Uttar Pradesh, India", icon: "📍", href: null }
             ].map((contact, index) => (
-              <Card key={index} className="bg-tech-surface border-tech-muted/30 shadow-xl">
+              <Card key={index} className="bg-tech-surface border-tech-muted/30 shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-tech-accent/50">
                 <CardContent className="p-6 text-center">
                   <div className="text-3xl mb-3">{contact.icon}</div>
                   <h3 className="font-bold mb-2 text-white text-lg">{contact.label}</h3>
-                  <p className="text-tech-accent font-semibold">{contact.value}</p>
+                  {contact.href ? (
+                    <a 
+                      href={contact.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-tech-accent font-semibold hover:text-white transition-colors duration-200 block"
+                    >
+                      {contact.value}
+                    </a>
+                  ) : (
+                    <p className="text-tech-accent font-semibold">{contact.value}</p>
+                  )}
                 </CardContent>
               </Card>
             ))}

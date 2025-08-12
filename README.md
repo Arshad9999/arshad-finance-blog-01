@@ -1,6 +1,6 @@
 # Welcome to your Lovable project
 
-## Project info
+## Project infokjn
 nhdfg
 **URL**: https://lovable.dev/projects/9f741c33-7416-4eb0-a699-bd38b4113a96
 
